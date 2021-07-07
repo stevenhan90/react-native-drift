@@ -1,6 +1,6 @@
 require "json"
 
-package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+package = JSON.parse(File.read(File.join(__dir__, "../package.json")))
 
 Pod::Spec.new do |s|
   s.name         = "RNDrift"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   A simple React Native wrapper for Drift.com platform
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/nocturneio/react-native-drift"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "LICENCE.md" }
   s.author             = { "author" => "c.delouvencourt@nocturne.app" }
@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "Drift" '~> 2.2.7'
+  s.dependency "Drift"
 end
